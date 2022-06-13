@@ -1,0 +1,154 @@
+.AddMovie {
+    max-width: 50%;
+    margin: 70px auto;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  h6 {
+    margin-right: 120px;
+  }
+
+  .button.btn.btn-primary {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+
+  .MovieCard {
+    background-color: #282c34;
+    color: rgb(206, 68, 68);  /*couleur rating*/
+      
+      box-shadow:  0 5px 10px rgba(31, 204, 190, 0.5);
+      width: 250px;
+      background-color: #282c34;
+      margin: 1rem; 
+      padding: 0px;
+      border-radius:  10px;
+      box-sizing: border-box;
+      overflow: hidden;
+      position: relative;
+      
+  }
+
+  .movie.poster{
+    width: 100%;
+    height: 250px;
+  }
+  .movieCard.details{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+   
+  }
+  .movie-details.box{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .movie-details .titre{
+    width: 180px;
+    text-align: center;
+    color: #c71e00;
+    padding-left: 40px;  /* FILM  NAME*/
+  
+  }
+  .MovieCard-details .overview{
+    position: relative;  /*  change width of overflow*/
+    left: 0;
+    bottom: 0;
+    max-height: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    color: white;
+    box-sizing: border-box;
+    padding: 1 rem;
+    transition: all 0.4s ease-in-out;
+    overflow-y: auto;
+    transform: translateY(101%);
+  
+  }
+  .movie-details:hover .overview{
+    transform: translateY(0%);  /* description affiche */
+  }
+ .Rating{
+    background-color: var(--primary-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid var(--primary-color);
+    box-shadow: inset 0 5px 5px black;
+    position: absolute;
+    right :5px;
+    bottom: 5px;
+  }
+
+
+/* button add movie style*/
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.headerCard{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-between;
+ 
+    z-index:1;
+}    /* zone bouton et titre jaune*/
+
+.headerCard h3{
+    font-family: 'Dancing Script',cursive;
+    color:#c1db2a;
+    font-size: 50px;
+    
+}
+.HeaderCard.Modal.Title{
+  width: 300Px;
+}
+.button {
+    width: 170px;
+    height:50px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    }
+
+.button-1 {
+    background-color: aqua;
+    border: 1px solid #09c1ce;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #c71e00;
+}
+.button-1:hover {
+    box-shadow: 0 0 5px 0 #0096c7 inset,
+    0 0 5px 1px #00d7c3;
+    background-color: red;
+    border: 1px solid ;
+    animation: pulse 1s infinite;
+    transition: .3s;
+    color: white;
+}
+.r{
+  height: 50px;
+  width: 50px;
+  color: #c1db2a;
+}
+.rs{
+  margin-left: 75px;
+}

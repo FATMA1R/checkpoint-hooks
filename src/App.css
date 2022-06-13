@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+
+    background-image: url('/public/images/poster.jpg'); background-attachment: fixed;
+   background-size: cover;  /* redimensionner background img*/
+  
+
 }
 
 .App-logo {
@@ -35,4 +40,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.movieCard{
+  margin: 20px;
+  
 }
