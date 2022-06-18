@@ -19,8 +19,6 @@ function AddMovie( {movies, setMovies }) {
     })
 
     const handleAdd=()=>{{setMovies([...movies,newMovie])};handleClose()}
-
-
             return (
 
                 <>
@@ -45,7 +43,7 @@ function AddMovie( {movies, setMovies }) {
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                     <Form.Label>Description</Form.Label>
-                                    <Form.Control as="textarea" rows={3} placeholder="Write some description of the movie" style={{maxHeight:"100%", minHeight:"100%"}} onChange={(e)=>setNewMovie({...newMovie, description:e.target.value})}/>
+                                    <Form.Control as="textarea" rows={3} placeholder="Write some description of the movie" style={{maxHeight:"100%", minHeight:"100%",textDecoration:"none"}} onChange={(e)=>setNewMovie({...newMovie, description:e.target.value})}/>
                                 </Form.Group>
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                     <Form.Label>rating</Form.Label>

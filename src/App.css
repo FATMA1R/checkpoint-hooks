@@ -1,9 +1,9 @@
+
+
 .App {
   text-align: center;
 
-    background-image: url('/public/images/poster.jpg'); background-attachment: fixed;
-   background-size: cover;  /* redimensionner background img*/
-  
+  text-decoration: none;
 
 }
 
@@ -30,7 +30,8 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* color lien text*/
+ text-decoration: none; 
 }
 
 @keyframes App-logo-spin {
@@ -45,4 +46,7 @@
 .movieCard{
   margin: 20px;
   
+}
+.a href {
+  text-decoration: none;
 }

@@ -1,0 +1,36 @@
+.title {
+    font-family: 'Dancing Script', cursive;
+    color: #0096c7;
+    font-size: 50px;
+ 
+    text-align: center;
+    margin-top: 30px;
+
+    
+}
+.Home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:10px 20px 10px 75px;
+    
+    
+    height: 500px;
+   
+   
+}
+.caro{
+   width: 1000px;
+   height: max-content;
+   border-radius: 10px;
+   
+}
+.posterr{
+    border-radius: 10px;
+    width:850px;
+    height:500px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px; height: 500px;box-shadow: rgba(206, 10, 10, 0.35) 0px 5px 15px;
+}

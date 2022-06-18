@@ -6,8 +6,10 @@ import MovieList from './components/MovieList';
 import Navigation from './components/Navigation';
 import FilterCard from './components/Filter/FilterCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Contact from './components/Contact';
+import About from './components/About';
+import Trailer from './components/Trailer';
 
 function App() {
   
@@ -127,19 +129,20 @@ const [movies, setMovies]= useState ([
 <>
 
  <div className="App">
- 
-        <Navigation/>
 
-       
+ <Navigation />
      <FilterCard setTitleMovie={setTitleMovie} setRateMovie={setRateMovie}/> {/*get the resulat of search input&rate*/}
      
-        <MovieList movies={movies} setMovies={setMovies} titleMovie={titleMovie} rateMovie={rateMovie} /> 
-       
+
+      <Routes>
+        <Route path="/" element={ <MovieList movies={movies} setMovies={setMovies} titleMovie={titleMovie} rateMovie={rateMovie} /> } />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/trailer/:name" element={<Trailer  movies={movies} />} /> 
+      </Routes>
  </div>
 </>
-   
-
-    
+  
   );
 }
 

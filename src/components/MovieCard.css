@@ -1,0 +1,82 @@
+.movie{
+    background-color: #282c34;
+    color: rgb(206, 68, 68);  /*couleur rating*/
+      
+      box-shadow:  0 5px 10px rgba(31, 204, 190, 0.5);
+      width: 250px;
+      background-color: rgb(22, 182, 17);
+      margin: 1rem; 
+      padding: 0px;
+      border-radius:  10px;
+      box-sizing: border-box;
+      overflow: hidden;
+      position: relative;
+
+    width: 18rem; min-height: 461px; max-height:461px ;margin-bottom:50px;
+      
+  }
+
+  .movie .poster{
+    width: 100%;min-height: 361px;
+    height: 950px;
+  }
+  .movie-details{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    background-color:  #282c34;
+   
+  }
+  .movie-details .box{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; size: 20px bold ;
+  }
+  .movie-details .titre{
+    width: 180px;
+    text-align: center;
+    color: #c71e00;
+    padding-left: 40px;  /* FILM  NAME*/
+  
+  }
+  .movie-details .overview{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: translateY(calc(200px + 1em));
+    transition: transform 0.3s;
+    color: rgb(253, 253, 253);
+    background-color: rgb(160, 95, 128);
+    transform: translateY(calc(70px + 4em));
+    -webkit-transform: translateY(calc(220px + 1em));
+    -moz-transform: translateY(calc(200px + 1em));
+    -ms-transform: translateY(calc(200px + 1em));
+    -o-transform: translateY(calc(200px + 1em));
+}
+  .movie-details:hover .overview{
+    transform: translateY(0%);  /* description affiche */
+  }
+ .rating{
+    background-color: var(--primary-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+   
+    position: absolute;
+    right:5px;
+    bottom: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
